@@ -1,19 +1,20 @@
-@import url('https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif; 
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background-image: url('https://img.freepik.com/premium-vector/abstract-paper-background-with-shadows-green-colors_444390-12263.jpg'); 
-
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper {
@@ -24,17 +25,15 @@ body{
     flex-direction: column;
     border-radius: 5px;
     background-color: #293447;
-
 }
 
-.game-details{
-    color:rgb(255, 255, 255);
-    font-size: 500;
+.game-details {
+    color: rgb(255, 255, 255);
+    font-size: 2rem; /* Corrigido para um tamanho mais legível */
     font-weight: 500;
     padding: 20px 27px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .play-board {
@@ -42,5 +41,31 @@ body{
     height: 100%;
     background-color: #212837;
     display: grid;
-    grid-template: repeat(30, 1fr) / (30, 1fr);
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr); 
+}
+
+.play-board .food {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.play-board .head {
+    background-color: rgb(6, 255, 6);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
 }
