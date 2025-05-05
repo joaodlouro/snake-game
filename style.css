@@ -1,0 +1,46 @@
+@import url('https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans', sans-serif; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/premium-vector/abstract-paper-background-with-shadows-green-colors_444390-12263.jpg'); 
+
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #293447;
+
+}
+
+.game-details{
+    color:rgb(255, 255, 255);
+    font-size: 500;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    background-color: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / (30, 1fr);
+}
