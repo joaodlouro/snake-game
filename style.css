@@ -29,7 +29,7 @@ body {
 
 .game-details {
     color: rgb(255, 255, 255);
-    font-size: 2rem; /* Corrigido para um tamanho mais legível */
+    font-size: 2rem;   
     font-weight: 500;
     padding: 20px 27px;
     display: flex;
